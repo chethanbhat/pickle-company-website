@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 2s;
+}
+body {
+  font-family: "lato", sans-serif;
+  background: #ee9ca7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #ffdde1,
+    #ee9ca7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #ffdde1,
+    #ee9ca7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  line-height: 1.2;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+li {
+  margin: 0 1em;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(142, 140, 219);
+  padding: 24px;
+}
+
+header #logo {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 48px;
+  color: white;
+}
+
+#nav-bar ul {
+  display: flex;
+}
+
+#nav-bar a {
+  color: white;
+  font-weight: bold;
+}
+
+#nav-bar a:hover,
+#nav-bar a:active {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+#header-img {
+  height: 50px;
+  width: 50px;
+}
+
+#hero {
+  max-width: 960px;
+  display: flex;
+  margin: 36px auto 12px;
+}
+
+#hero div {
+  flex: 1;
+}
+
+#hero p {
+  margin-top: 12px;
+  margin-bottom: 36px;
+}
+
+#hero iframe {
+  display: block;
+}
+
+#form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 36px auto;
+}
+
+#form label {
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+#form input {
+  height: 36px;
+  border-radius: 8px;
+  border-color: #ccc;
+  color: black;
+  outline: none;
+  width: 50%;
+  padding: 8px;
+  margin-right: 8px;
+}
+
+#form button {
+  background-color: rgb(142, 140, 219);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  height: 36px;
+  width: 72px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+#cards {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin: 36px auto;
+}
+#cards .card {
+  background-color: rgb(228, 190, 233);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 250px;
+  margin: 0 24px;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.card .title {
+  font-size: 24px;
+}
+.card .price {
+  margin: 8px auto;
+  font-size: 20px;
+}
+
+.card .description {
+  line-height: 1.2;
+  margin: 12px auto 36px;
+}
+
+.card button {
+  background-color: rgb(142, 140, 219);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  height: 36px;
+  width: 72px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  display: block;
+  margin: 12px auto;
+  cursor: pointer;
+}
+
+footer {
+  padding: 16px;
+  background-color: rgb(142, 140, 219);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .logo {
+  font-size: 24px;
+}
+footer .copyright {
+  font-size: 16px;
+}
+
+footer nav {
+  display: flex;
+}
+
+footer nav a {
+  color: white;
+  margin: 8px;
+  font-weight: 600;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+/* Responsive CSS - Mobile */
+@media (max-width: 500px) {
+  header {
+    flex-wrap: wrap;
+  }
+  header #nav-bar {
+    margin-top: 24px;
+  }
+  #hero {
+    flex-wrap: wrap;
+    padding: 24px;
+  }
+  #form {
+    width: 100%;
+    margin: 12px;
+  }
+  #form input {
+    width: 50%;
+  }
+
+  #cards {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  #cards .card {
+    width: 80%;
+    margin: 12px;
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+}
